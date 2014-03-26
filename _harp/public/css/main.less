@@ -1,0 +1,30 @@
+@bkg: #f4f4f7;
+@footerHeight: 2.4em;
+
+body {
+  padding-bottom: @footerHeight;
+}
+
+footer {
+  display: block;
+  position: absolute;
+  bottom:0;
+  left:0;
+  right:0;
+  height: @footerHeight;
+  font-size: 0.8em;
+  background-color: #EEE;
+  text-align: center;
+  box-shadow: 0 -2px 8px rgba(0,0,0,0.25);
+  line-height: @footerHeight;
+
+  img {
+    vertical-align: text-top;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    position: static;
+  }
+}

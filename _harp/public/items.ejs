@@ -1,0 +1,13 @@
+<h1>News Items</h1>
+<p>Various news bits about the biometric database, and the work done to stop it.</p>
+
+
+<% 
+var items = public.newsItems._data;
+for ( var itmName in items ) { 
+	var itm = items[itmName]
+%>
+<li>
+    <a href="/newsItems/<%=itmName%>"><%=itm.title%></a>
+</li>
+<% } %>

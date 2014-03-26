@@ -1,0 +1,15 @@
+<html>
+  <head>
+    <title><%= siteTitle%> <%= current.source%></title>
+    <%- partial("../_partials/css") %>
+  </head>
+  <body>
+  	<header>
+  	 <%- partial("../_partials/navBar")%>	
+  	</header>
+    <div class="container">
+      <%- yield %>
+    </div>
+    <%- partial("../_partials/footer")%>
+  </body>
+</html>
