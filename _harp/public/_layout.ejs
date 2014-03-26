@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title><%= siteTitle%> <%= current.source%></title>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <%- partial("_partials/css") %>
+  </head>
+  <body>
+  	<header>
+  		<%- partial("_partials/navBar") %>
+  	</header>
+    <div class="container">
+      <%- yield %>
+    </div>
+    <%- partial("_partials/footer") %>
+    <%- partial("_partials/bodyScriptIncludes") %>
+  </body>
+</html>
