@@ -3,11 +3,11 @@
 
 
 <% 
-var items = public.newsItems._data;
+var items = public.items._data;
 for ( var itmName in items ) { 
 	var itm = items[itmName]
 %>
 <li>
-    <a href="/newsItems/<%=itmName%>"><%=itm.title%></a>
+    <a href="/items/<%=itmName%>"><%=itm.title%></a>
 </li>
 <% } %>

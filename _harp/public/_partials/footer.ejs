@@ -1,6 +1,15 @@
+<%
+function g( url ) {
+	var out = "";
+	for ( i=0; i<current.path.length; i++ ) {
+		out = out + "../";
+	}
+	return out + url;
+}
+%>
 <footer>
 	<a href="http://creativecommons.org/licenses/by-nc/3.0/deed.en_US" target="_blank">
-		<img src="/img/cc-by-nc.png" alt="CC-BY-NC"/>
+		<img src="<%-g("/img/cc-by-nc.png")%>" alt="CC-BY-NC"/>
 	</a>
 	no2bio by no2bio.org is licensed under a Creative Commons Attribution-NonCommercial 3.0 Unported License.
 	Based on a work at no2bio.org
