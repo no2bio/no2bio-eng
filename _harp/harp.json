@@ -1,6 +1,7 @@
 {
 	"globals" : {
 		"siteTitle" : "No2Bio",
-		"siteTagline" : "Stopping the Israeli Biometric Database, one citizen at a time"
+		"siteTagline" : "Stopping the Israeli Biometric Database, one citizen at a time",
+		"noHeader" : ["index"]
 	}
 }

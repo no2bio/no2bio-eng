@@ -8,9 +8,11 @@
     <%- partial("_partials/css") %>
   </head>
   <body>
+    <% if ( noHeader.indexOf(current.source) == -1 ) { %>
   	<header>
   		<%- partial("_partials/navBar") %>
   	</header>
+    <% } %>
     <div class="container">
       <%- yield %>
     </div>
