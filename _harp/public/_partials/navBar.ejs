@@ -1,3 +1,4 @@
+<% include ../_renders %>
 <nav class="navbar navbar-default" role="navigation">
   <div class="container-fluid">
     <div class="navbar-header">
@@ -13,13 +14,13 @@
     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
       <ul class="nav navbar-nav">
         <li <% if (current.source==="index") { %>class="active" <%}%>>
-          <a href="/">Home</a>
+          <a href="<%=g("/")%>">Home</a>
         </li>
         <li <% if (current.path[0] ==="items") { %>class="active" <%}%>>
-          <a href="/items.html">News Items</a>
+          <a href="<%=g("/items.html")%>">News Items</a>
         </li>
         <li <% if (current.source==="about") { %>class="active" <%}%>>
-          <a href="/about.html">About Us</a>
+          <a href="<%=g("/about.html")%>">About Us</a>
         </li>
       </ul>
       <ul class="nav navbar-nav navbar-right">
