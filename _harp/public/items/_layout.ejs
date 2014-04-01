@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title><%= siteTitle%> <%= current.source%></title>
+    <title><%= siteTitle%><%= current.source%></title>
     <%- partial("../_partials/css") %>
   </head>
   <body>
@@ -11,5 +11,6 @@
       <%- yield %>
     </div>
     <%- partial("../_partials/footer")%>
+    <%- partial("_partials/bodyScriptIncludes") %>
   </body>
 </html>
