@@ -1,9 +1,40 @@
 @bkg: #f4f4f7;
 @footerHeight: 2.4em;
+@no2bioYellow: #F6E531;
 
 body {
   padding-bottom: (@footerHeight*2);
 }
+
+div.no2bioBrand {
+ background-color: @no2bioYellow;
+ 
+ div.collapse {
+  ul.nav {
+     li {
+      a {
+        color: black;
+      }
+    }
+  }
+ }
+
+}
+.navbar-default .navbar-nav > .active > a {
+  background-image: none;
+  background-color: darken(@no2bioYellow, 10%);
+  font-weight: bold;
+  &:hover {
+    background-color: darken(@no2bioYellow, 5%);;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  &:hover {
+    background-color: darken(@no2bioYellow, 10%);
+  }
+}
+
 
 footer {
   display: block;
