@@ -1,18 +1,30 @@
- {
-   "hello-world": {
-     "title": "Hello World.",
-     "date": "Feb 28, 2013"
+ [
+   {
+     "date": "2014-03-03",
+     "title": "Shin Bet, Mossad bar employees from signing up for biometric database",
+     "credit": "Haaretz",
+     "url": "http://www.haaretz.com/news/national/.premium-1.577516"
    },
-   "hello-brazil": {
-     "title": "Hello Brazil.",
-     "date": "March 4, 2013"
+   {
+     "date": "2013-08-07",
+     "title": "Amidst controversy, biometric database is launched",
+     "credit": "Jerusalem Post",
+     "url": "http://www.jpost.com/National-News/Interior-Ministry-launches-new-biometric-database-amid-fears-controversy-319160"
    },
-   "hello-beeri": {
-     "title": "Hello Be'eri.",
-     "date": "March 4, 2013"
+   {
+     "date": "2012-24-07",
+     "title": "Israel’s Biometric Database Deemed “Harmful” by High Court Justices",
+     "credit": "EFF",
+     "url": "https://www.eff.org/deeplinks/2012/07/israels-biometric-database-deemed-harmful-high-court-justices"
    },
-   "nonx-beeri": {
-     "title": "Does not exist",
-     "date": "March 4, 2013"
+   {
+     "date": "2010-06-20",
+     "title": "The State of Israel and the Biometric Database Law: Political Centrism and the Post-Democratic State",
+     "credit": "Nitzan Lebovic, Avner Pinchuk, The Israel Democracy Institute",
+     "url": "http://en.idi.org.il/analysis/articles/the-state-of-israel-and-the-biometric-database-law-political-centrism-and-the-post-democratic-state/"
+   },
+   {
+     "title": "Wikipedia entry",
+     "url": "https://en.wikipedia.org/wiki/Biometric_Database_Law"
    }
- }
+ ]
