@@ -1,13 +1,13 @@
-<h1>News Items</h1>
-<p>Various news bits about the biometric database, and the work done to stop it.</p>
+<h1>Related articles</h1>
+<p>Links to aricles related to the Israeli biometric database bill.</p>
 
 
 <% 
 var items = public.items._data;
-for ( var itmName in items ) { 
-	var itm = items[itmName]
+for ( var i = 0 ; i<items.length ; ) { 
+	var itm = items[i]
 %>
 <li>
-    <a href="/items/<%=itmName%>"><%=itm.title%></a>
+    <small><%=itm.date></small> <a target="_blank" href="<%=itm.url%>"><%=itm.title%></a> <small>credit</small>
 </li>
 <% } %>
