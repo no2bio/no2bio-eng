@@ -5,7 +5,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="vnd/jquery-2.1.0.min.js"></script>
     <%- partial("_partials/css") %>
+    <!-- Privacy Shares -->
+    <script type="text/javascript" src="vnd/jquery.socialshareprivacy.min.autoload.js"></script>
+    <script type="application/x-social-share-privacy-settings">{"path_prefix":"http://panzi.github.io/SocialSharePrivacy/","layout":"line","services":{"buffer":{"status":false},"delicious":{"status":false},"disqus":{"status":false},"fbshare":{"status":false},"flattr":{"status":false},"hackernews":{"status":false},"mail":{"status":false},"pinterest":{"status":false},"reddit":{"status":false},"stumbleupon":{"status":false},"tumblr":{"status":false},"xing":{"status":false}}}</script>
+    <!-- /Privacy Shares -->
   </head>
   <body>
     <% if ( noHeader.indexOf(current.source) == -1 ) { %>
@@ -15,6 +20,8 @@
     <% } %>
     <div class="container">
       <%- yield %>
+
+  		<%- partial("_partials/share") %>
     </div>
     <%- partial("_partials/footer") %>
     <%- partial("_partials/bodyScriptIncludes") %>

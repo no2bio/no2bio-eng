@@ -1,13 +1,16 @@
+<% include _renders.ejs %>
 <h1>Related articles</h1>
-<p>Links to aricles related to the Israeli biometric database bill.</p>
+<p>Links to articles related to the Israeli biometric database bill.</p>
 
-
-<% 
+<%
 var items = public.items._data;
-for ( var i = 0 ; i<items.length ; ) { 
-	var itm = items[i]
+for ( idx in items ) {
+	var itm = items[idx];
 %>
-<li>
-    <small><%=itm.date></small> <a target="_blank" href="<%=itm.url%>"><%=itm.title%></a> <small>credit</small>
+<li class="list-unstyled">
+		<a href="items/<%=idx%>.html"><span class="glyphicon glyphicon-chevron-right"></span></a>
+    <small><%= m(itm.date)%></small>
+		<a target="_blank" href="<%=itm.url%>"><%=itm.title%> <span class="glyphicon glyphicon-new-window"></a>
+		<small><%= m(itm.credit)%></small>
 </li>
 <% } %>

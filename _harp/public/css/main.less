@@ -1,13 +1,44 @@
 @bkg: #f4f4f7;
 @footerHeight: 2.4em;
+@no2bioYellow: #FFE300;
+@no2bioRed: #D22027;
 
 body {
-  padding-bottom: @footerHeight;
+  padding-bottom: (@footerHeight*2);
+  padding-top: 70px; // Bootstrap's navbar
+}
+
+div.no2bioBrand {
+
+ div.collapse {
+  ul.nav {
+     li {
+      a {
+        color: black;
+      }
+    }
+  }
+ }
+
+}
+.navbar-default .navbar-nav > .active > a {
+  background-image: none;
+  background-color: darken(@no2bioYellow, 10%);
+  font-weight: bold;
+  &:hover {
+    background-color: darken(@no2bioYellow, 5%);;
+  }
+}
+
+.navbar-default .navbar-nav > li > a {
+  &:hover {
+    background-color: darken(@no2bioYellow, 10%);
+  }
 }
 
 footer {
   display: block;
-  position: absolute;
+  position: fixed;
   bottom:0;
   left:0;
   right:0;
@@ -25,16 +56,24 @@ footer {
 
 .creepy {
   font-weight: bold;
-  color: #D22027;
+  color: @no2bioRed;
   text-shadow: 0 0 6px #fff;
 }
 
 .jumbotron {
-  background: #ffe300;
+  background: @no2bioYellow;
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 991px) {
   footer {
     position: static;
+    margin-top: 2em;
+    line-height: 1em;
+    padding: 0.5em;
+    height: auto;
+  }
+
+  body {
+    padding-bottom: 0;
   }
 }
