@@ -1,6 +1,7 @@
 @bkg: #f4f4f7;
 @footerHeight: 2.4em;
-@no2bioYellow: #F6E531;
+@no2bioYellow: #FFE300;
+@no2bioRed: #D22027;
 
 body {
   padding-bottom: (@footerHeight*2);
@@ -8,7 +9,6 @@ body {
 }
 
 div.no2bioBrand {
- background-color: @no2bioYellow;
 
  div.collapse {
   ul.nav {
@@ -56,8 +56,12 @@ footer {
 
 .creepy {
   font-weight: bold;
-  color: #840;
-  text-shadow: 0 0 6px #8F2;
+  color: @no2bioRed;
+  text-shadow: 0 0 6px #fff;
+}
+
+.jumbotron {
+  background: @no2bioYellow;
 }
 
 @media screen and (max-width: 991px) {
