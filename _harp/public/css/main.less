@@ -23,16 +23,17 @@ div.no2bioBrand {
 }
 .navbar-default .navbar-nav > .active > a {
   background-image: none;
-  background-color: darken(@no2bioYellow, 10%);
+  background-color: lighten(@no2bioYellow, 10%);
   font-weight: bold;
   &:hover {
-    background-color: darken(@no2bioYellow, 5%);;
+    background-color: @no2bioRed;
+    color: white;
   }
 }
 
 .navbar-default .navbar-nav > li > a {
   &:hover {
-    background-color: darken(@no2bioYellow, 10%);
+    background-color: lighten(@no2bioYellow, 10%);
   }
 }
 
@@ -57,7 +58,7 @@ footer {
 .creepy {
   font-weight: bold;
   color: @no2bioRed;
-  text-shadow: 0 0 6px #fff;
+  text-shadow: 0 0 6px #eee;
 }
 
 .jumbotron {
