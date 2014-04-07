@@ -27,7 +27,8 @@ div.no2bioBrand {
   font-weight: bold;
   &:hover {
     background-color: @no2bioRed;
-    color: white;
+    color: @no2bioYellow;
+    text-shadow: none;
   }
 }
 
@@ -55,10 +56,71 @@ footer {
   }
 }
 
-.creepy {
+h1 {
+  border-bottom: 2px solid @no2bioYellow;
+  color: @no2bioRed;
+}
+
+.glow {
   font-weight: bold;
   color: @no2bioRed;
   text-shadow: 0 0 6px #eee;
+}
+
+.creepy {
+  font-weight: bold;
+  color: @no2bioRed;
+  text-shadow: 0 -2px 8px #EEE;
+  -webkit-animation-name: creepyAnimation;
+  -webkit-animation-duration: 10s;
+  -webkit-animation-timing-function: linear;
+  -webkit-animation-delay: 2s;
+  -webkit-animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  -webkit-animation-play-state: running;
+  /* Standard syntax */
+  animation-name: creepyAnimation;
+  animation-duration: 10s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-play-state: running;
+}
+
+@keyframes creepyAnimation {
+  0%   {
+    text-shadow: 0 -2px 8px #EEE;
+  }
+  50% {
+    text-shadow: 0 2px 4px #A68;
+  }
+  100% {
+    text-shadow: 0 0px 8px rgba(127,126,127,0);
+  }
+}
+
+@-webkit-keyframes creepyAnimation {
+  0%   {
+    text-shadow: 0 -2px 8px #EEE;
+  }
+  50% {
+    text-shadow: 0 2px 4px #A68;
+  }
+  100% {
+    text-shadow: 0 0px 8px rgba(127,126,127,0);
+  }
+}
+@-moz-keyframes creepyAnimation {
+  0%   {
+    text-shadow: 0 -2px 8px #EEE;
+  }
+  50% {
+    text-shadow: 0 2px 4px #A68;
+  }
+  100% {
+    text-shadow: 0 0px 8px rgba(127,126,127,0);
+  }
 }
 
 .jumbotron {
